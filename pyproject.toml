@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "runx"
+version = "0.1.0"
+description = "A robust CLI tool for Debian Linux to launch GUI and CLI applications completely detached from the terminal."
+readme = "README.md"
+requires-python = ">=3.6"
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+]
+authors = [
+    { name = "RootTech" }
+]
+
+[project.scripts]
+runx = "runx:main"
